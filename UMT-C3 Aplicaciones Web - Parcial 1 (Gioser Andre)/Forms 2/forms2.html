@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!---
+    Universidad Tecnologica Metropolitana
+    Tercer Cuatrimestre
+    Grupo A
+    Alumno. Gioser Andre Dzib Chan
+    Desarrollo de Software Multiplataforma
+    Prof. Ruth
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fomrs 2</title>
+        <link rel="icon" href="/Sesion de fotos/Imagenes/5 Calaveras.jpg">
+        <link rel="stylesheet" type="text/css" href="/Forms 2/forms2.css">
+    </head>
+    <body>
+        <div class="tarea">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="url">URL:</label>
+                <input type="url" placeholder="Escribe la URL de tu pagina" id="url" name="url" required><br><br>
+                <label for="fecha">Fecha:</label>
+                <input type="text" id="fecha" name="fecha" list="fechas" style="width:90px;" required><br><br>
+                <datalist id="fechas">
+                    <option value="13/05/2024"></option>
+                    <option value="14/05/2024"></option>
+                    <option value="15/05/2024"></option>
+                </datalist>        
+                <label for="tiempo">Tiempo:</label>
+                <input type="number" id="time" name="time" required><br><br>
+                <label for="fecha_hora1">Fecha y Hora:</label>
+                <input type="text" id="fechayhora" name="fechayhora" list="fechas" style="width:90px;" required>
+                <input type="number" id="hora" style="width:30px" name="time" required> UTC<br><br>
+                <label for="mes">Mes:</label>
+                <input type="text" id="mes" name="mes" list="meses" style="width: 90px;" required><br><br>
+                <datalist id="meses">
+                    <option value="Enero"></option>
+                    <option value="Febrero"></option>
+                    <option value="Marzo"></option>
+                    <option value="Abril"></option>
+                    <option value="Mayo"></option>
+                    <option value="Junio"></option>
+                    <option value="Julio"></option>
+                    <option value="Agosto"></option>
+                    <option value="Septiembre"></option>
+                    <option value="Octubre"></option>
+                    <option value="Noviembre"></option>
+                    <option value="Diciembre"></option>
+                </datalist>
+                <label for="semana">Semana:</label>
+                <input type="text" id="semana" name="semana" list="semanas" required><br><br>
+                    <datalist id="semanas">
+                        <option value="2024-W01">primera semana del año 2024</option>
+                        <option value="2024-W02">segunda semana del año 2024</option>
+                        <option value="2024-W03">tercera semana del año 2024</option>
+                    </datalist>
+                <label for="numero">Número (Min -10, Max 10):</label>
+                <input type="number" id="numero" name="numero" min="-10" max="10" required><br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                <label for="termino_busqueda">Término de Búsqueda:</label>
+                <input type="search" id="termino_busqueda" name="termino_busqueda" required><br><br>
+                <label for="color_favorito">Color Favorito:</label>
+                <input type="color" id="color_favorito" name="color_favorito" required><br><br>
+            </form>
+        </div>
+    </body>
+</html>

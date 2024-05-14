@@ -1,0 +1,69 @@
+/* Estilo general del body, se centra el contenido */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el formulario, se ajusta el ancho y el margen */
+.tarea {
+    width: 55%;
+    padding: 20px;
+    background-color: #d9d4d4;
+    margin: 2% auto;
+}
+.tarea div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para texto1 y texto2, se ajusta color y tamaño de fuente */
+.texto1, .texto2 {
+    font-size: large;
+}
+.texto1 {
+    color: rgb(48, 48, 125);
+}
+.texto2 {
+    color: rgb(103, 103, 214);
+    font-size: medium;
+}
+
+
+/* Estilo para etiquetas, se ajusta el ancho y los márgenes */
+label {
+    width: 45%;
+    text-align: right;
+}
+
+/* Estilo para los campos de input, se ajusta el padding, el borde, el ancho y el margen */
+input, .Fecha {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 45%; /* Disminuir el tamaño para evitar la superposición tras la alineación */
+    margin-left: 0px; /* Alinear completamente a la izquierda */
+    margin-bottom: 15px;
+}
+input, select {
+    width: 48%;
+    left: auto;
+}
+/* Estilo especial para campos Fecha, se ajusta el ancho y el margen */
+.Fecha {
+    width: 13%;
+    margin-left: 0px; /* Alinear completamente a la izquierda */
+}
+
+/* Estilo especial para la primera fecha, se ajusta el margen izquierdo */
+.fecha {
+    margin-left: -10px; /* Alinear completamente a la izquierda */
+}
+.phos
+{
+    display: flex;
+    flex-direction: unset;
+}

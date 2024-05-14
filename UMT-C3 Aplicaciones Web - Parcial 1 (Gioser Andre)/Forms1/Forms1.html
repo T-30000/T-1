@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!---
+    Universidad Tecnologica Metropolitana
+    Tercer Cuatrimestre
+    Grupo A
+    Alumno. Gioser Andre Dzib Chan
+    Desarrollo de Software Multiplataforma
+    Prof. Ruth
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/Sesion de fotos/Imagenes/5 Calaveras.jpg">
+        <title>Forms 1</title>
+        <link rel="stylesheet" type="text/css" href="/Forms1/cssForms.css">
+    </head>
+    <body>
+        <div class="tarea">
+            <form action="#" method="post">
+                <div class="phos">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
+                </div>
+                <div class="phos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                </div>
+                <div class="phos">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                        <!-- Se generan los días del 1 al 31 -->
+                        <select class="Fecha fecha" name="dia_nacimiento" required>
+                            <option value="">Día</option>
+                            <script>
+                                for (i = 1; i <= 31; i++) {
+                                document.write("<option value='" + i + "'>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                        <!-- Se generan los meses del 1 al 12 -->
+                        <select class="Fecha" name="mes_nacimiento" required>
+                            <option value="">Mes</option>
+                                <script>
+                                var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+                                for (i = 0; i < 12; i++) {document.write("<option value='" + (i+1) + "'>" + meses[i] + "</option>");}
+                                </script>
+                        </select>
+                        <!-- Se generan los años desde 1900 hasta el año actual -->
+                        <select class="Fecha" name="anio_nacimiento" required>
+                            <option value="">Año</option>
+                            <script>
+                                var year = new Date().getFullYear();
+                                for (i = 1900; i <= year; i++) {document.write("<option value='" + i + "'>" + i + "</option>");}
+                            </script>
+                        </select>
+                </div>
+                <div class="phos">
+                    <label label for="ciudad_nacimiento">Ciudad de Nacimiento</label> 
+                    <input type="text" id="ciudad_nacimiento" placeholder="Ciudad de nacimiento" name="ciudad_nacimiento" required>
+                </div>
+                <div class="phos">
+                    <label label for="pais_nacimiento">País de Nacimiento</label>
+                    <input type="text" placeholder="Elija un país" id="pais_nacimiento" name="pais_nacimiento" list="paises" required>
+                    <datalist id="paises">
+                        <option value="España"></option>
+                        <option value="México"></option>
+                        <option value="Argentina"></option>
+                        <option value="Colombia"></option>
+                        <option value="Chile"></option>
+                        <option value="Perú"></option>
+                        <option value="Venezuela"></option>
+                        <option value="Ecuador"></option>
+                        <option value="Guatemala"></option>
+                        <option value="Cuba"></option>
+                    </datalist>
+                </div>
+                <div class="phos">
+                    <label for="nacionalidad">Nacionalidad</label> 
+                    <input type="text" placeholder="Seleccione una nacionalidad" id="nacional" name="nacional" list="Nacion" required>
+                    <datalist id="Nacion">
+                        <option value="Española"></option>
+                        <option value="Estadounidense"></option>
+                        <option value="Francesa"></option>
+                        <option value="Italiana"></option>
+                        <option value="Alemana"></option>
+                        <option value="Británica"></option>
+                        <option value="Canadiense"></option>
+                        <option value="Australiana"></option>
+                        <option value="Japonesa"></option>
+                        <option value="Mexicana"></option>
+                    </datalist>
+                </div>
+                <div class="phos">
+                    <label for="numero_pasaporte">Número de Pasaporte</label> 
+                    <input type="number" placeholder="Numero de pasaporte" id="numero_pasaporte" name="numero_pasaporte" required>
+                </div>
+                <div class="phos">
+                    <label for="pais_emision_pasaporte">País de Emisión del Pasaporte</label> 
+                    <input type="text" placeholder="Elija el país" id="Emision" name="Emision" list="paises" required>
+                </div>
+                <div class="phos">
+                    <label for="fecha_emision_pasaporte">Fecha de emisión del pasaporte</label>
+                        <!-- Se generan los días del 1 al 31 -->
+                        <select class="Fecha fecha" name="dia_emision_pasaporte" required>
+                            <option value="">Día</option>
+                            <script>
+                                for (i = 1; i <= 31; i++) {
+                                document.write("<option value='" + i + "'>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                        <!-- Se generan los meses del 1 al 12 -->
+                        <select class="Fecha" name="mes_emision_pasaporte" required>
+                            <option value="">Mes</option>
+                                <script>
+                                var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+                                for (i = 0; i < 12; i++) {
+                                document.write("<option value='" + (i+1) + "'>" + meses[i] + "</option>");
+                                }
+                                </script>
+                        </select>
+                        <!-- Se generan los años desde 2100 hasta el año actual -->
+                        <select class="Fecha" name="anio_emision_pasaporte" required>
+                            <option value="">Año</option>
+                            <script>
+                                var year = new Date().getFullYear();
+                                for (i = 2010; i <= year; i++) {
+                                document.write("<option value='" + i + "'>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                </div>
+                <div class="phos">
+                    <label for="fecha_vencimiento_pasaporte">Fecha de Vencimiento del Pasaporte</label>
+                        <select class="Fecha fecha" name="dia_vencimiento_pasaporte" required>
+                            <option value="">Día</option>
+                            <script>
+                                for (i = 1; i <= 31; i++) {
+                                document.write("<option value='" + i + "'>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                        <!-- Se generan los meses del 1 al 12 -->
+                        <select class="Fecha" name="mes_vencimiento_pasaporte" required>
+                            <option value="">Mes</option>
+                                <script>
+                                var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+                                for (i = 0; i < 12; i++) {
+                                document.write("<option value='" + (i+1) + "'>" + meses[i] + "</option>");
+                                }
+                                </script>
+                        </select>
+                        <!-- Se generan los años desde 2020 hasta el año actual -->
+                        <select class="Fecha" name="anio_vencimiento_pasaporte" required>
+                            <option value="">Año</option>
+                            <script>
+                                var year = new Date().getFullYear();
+                                for (i = 2020; i <= year; i++) {
+                                document.write("<option value='" + i + "'>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

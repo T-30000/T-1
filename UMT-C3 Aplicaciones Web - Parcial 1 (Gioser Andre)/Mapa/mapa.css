@@ -1,0 +1,128 @@
+/* Estilo general del cuerpo */
+body
+{
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de la tarea */
+.tarea
+{
+    margin: 50px auto 2%;
+    border: 2px solid black;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo de texto1 */
+.texto1
+{
+    color: rgb(48, 48, 125);
+    font-size: large;
+}
+
+/* Estilo de texto2 */
+.texto2
+{
+    color: rgb(103, 103, 214);
+    font-size: medium;
+}
+
+/* Estilo de la portada */
+.portada
+{
+    background-color: rgb(251, 251, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+/* Estilo del grupo de formulario */
+.form-group
+{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo de las etiquetas de formulario */
+label
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Estilo de los campos de texto de entrada */
+input[type="text"]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"]
+{
+    padding: 12px 24px;
+    background-color: #ffdbdb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del botón de envío al pasar el mouse */
+input[type="submit"]:hover
+{
+    background-color: #8e4949;
+}
+
+/* Estilo de la información */
+.informacion
+{
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Estilo del mapa */
+.mapa
+{
+    margin-top: 40px;
+}
+
+/* Estilo del contenedor de mapas */
+.maps
+{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporción de aspecto 16:9 */
+}
+
+/* Estilo del iframe de los mapas */
+.maps iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+

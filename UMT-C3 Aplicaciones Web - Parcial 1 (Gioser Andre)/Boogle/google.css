@@ -1,0 +1,132 @@
+body
+{
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarea
+{
+    margin-top: 2%;
+    width: 1000px;
+    border: 0px solid black;
+}
+
+header
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header > div
+{
+    display: flex;
+    align-items: center;
+}
+
+.Glink, .Gweb
+{
+    padding: 15px;
+    text-decoration: none;
+    color: #4d6ac8;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+.HB, .HL
+{
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 20px;
+    margin: 0 10px;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.barra
+{
+    text-align: center;
+}
+
+.barra input[type="text"]
+{
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.barra button
+{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+    width: 200px;
+}
+
+footer
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pie
+{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: #003cff;
+}
+
+.pie span
+{
+    margin: 0 10px;
+}
+
+.pie .HL
+{
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 20px;
+    margin: 0 10px;
+}
+
+.pie p
+{
+    margin-top: 20px;
+}
+
+.Final
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.barra span{
+    text-decoration: underline;
+    color: #003cff;
+}

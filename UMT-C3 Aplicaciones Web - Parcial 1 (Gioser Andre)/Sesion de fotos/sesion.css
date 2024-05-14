@@ -1,0 +1,144 @@
+/* Estilos Generales */
+body
+{
+    /* Color de fondo y fuente para todo el cuerpo del documento */
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* Alineación de elementos en el cuerpo del documento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para la Imagen */
+.imagenC
+{
+    /* Tamaño y forma de la imagen */
+    width: 200px;
+    height: 200px;
+    border-radius: 4%;
+    margin-top: 10px;
+}
+
+/* Estilos para el Encabezado */
+.header
+{
+    /* Estilos de fondo y color de texto para el encabezado */
+    background-image: url("/Sesion de fotos/Imagenes/Atardecer_izquierdo.jpg");
+    background-size: cover;
+    padding: 3%;
+    height: 300px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+
+    /* Alineación de elementos en el encabezado */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    /* Estilos para el texto del encabezado */
+    .header p
+    {
+        /* Tamaño de la fuente para el texto del encabezado */
+        font-size: 2em;
+    }
+
+/* Estilos para la Carta */
+.carta
+{
+    /* Tamaño, color de fondo y alineación de la carta */
+    width: 240px;
+    height: 300px;
+    background-color: rgb(227, 209, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Bordes y espaciado de la carta */
+    border-radius: 5%;
+    padding: 0.5%;
+    margin: 10px;
+
+    /* Efectos para la carta */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    /* Efectos al pasar el cursor sobre la carta */
+    .carta:hover {
+        /* Aumentar tamaño, cambiar color de fondo y sombra al pasar el cursor */
+        transform: scale(1.05);
+        background-color: #f0f0f0;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    /* Estilos para el título de la carta */
+    .text3
+    {
+        /* Color, tamaño de la fuente y familia de la fuente para el título de la carta */
+        color: #5c1779;
+        font-size: 1.5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    /* Estilos para la descripción de la carta */
+    .text4
+    {
+        /* Color, tamaño de la fuente y familia de la fuente para la descripción de la carta */
+        color: #422e4a;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+/* Estilos para el contenedor de la tarea (que contiene lo maquetado) */
+.tarea
+{
+    /* Padding, bordes y márgenes para el contenedor de la tarea */
+    padding: 1%;
+    border: 0px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* Alineación de elementos en el contenedor de la tarea */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Otras clases de texto */
+.texto1
+{
+    /* Color y tamaño de la fuente para la clase de texto 1 */
+    color: rgb(48, 48, 125);
+    font-size: large;
+}
+.texto2
+{
+    /* Color y tamaño de la fuente para la clase de texto 2 */
+    color: rgb(103, 103, 214);
+    font-size: medium;
+}
+
+/* Estilos para la Portada */
+.portada
+{
+    /* Color de fondo, fuente y alineación para la portada */
+    background-color: rgb(251, 251, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Bordes, padding y forma para la portada */
+    border: 2px solid black;
+    padding: 1%;
+    border-radius: 5%;
+}

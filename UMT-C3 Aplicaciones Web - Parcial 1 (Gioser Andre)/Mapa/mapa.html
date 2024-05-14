@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!---
+    Universidad Tecnologica Metropolitana
+    Tercer Cuatrimestre
+    Grupo A
+    Alumno. Gioser Andre Dzib Chan
+    Desarrollo de Software Multiplataforma
+    Prof. Ruth
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mapa</title>
+        <link rel="icon" href="/Sesion de fotos/Imagenes/5 Calaveras.jpg">
+        <link rel="stylesheet" type="text/css" href="/Mapa/mapa.css">
+    </head>
+    <body>
+        <!-- Inicio del contenedor de tarea -->
+        <div class="tarea">
+            <!-- Titulo del formulario de registro -->
+            <h1>Registro a Evento</h1>
+            <p>Completa con tus dados para poder Registrarse al evento.</p>
+            <br>
+            <!-- Inicio del formulario de registro -->
+            <form action="#" method="post">
+                <!-- Campo de nombre -->
+                <div class="form-group">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <!-- Campo de apellidos -->
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <!-- Botón de registro -->
+                <input type="submit" value="Registrarse">
+            </form>
+            <!-- Inicio de la sección de información del evento -->
+            <div class="informacion">
+                <h2>Información del Evento</h2>
+                <!-- Fecha del evento -->
+                <p><strong>Fecha del Evento:</strong> Sabado, 15 de enero del 2025</p>
+                <!-- Dirección del evento -->
+                <p><strong>Dirección del Evento:</strong>CDMX, DF, Col. Mexicanos</p>
+                <!-- Hora del evento -->
+                <p><strong>Hora del Evento:</strong> 8:30 pm</p>
+            </div>
+            <!-- Inicio de la sección de ubicación del evento -->
+            <div class="mapa">
+                <h2>Ubicación del Evento</h2>
+                <!-- Mapa del evento -->
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59603.19656214017!2d-89.6139264!3d20.9846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5671097c309083%3A0xdf4f5dfb150ab59c!2sLa%20Plancha%20Park!5e0!3m2!1sen!2smx!4v1715705644664!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                 </div>
+            </div>
+        </div>
+        <!-- Fin del contenedor de tarea -->
+    </body>
+</html>

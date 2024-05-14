@@ -1,0 +1,128 @@
+body {
+    width: 1000px;
+    height: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.tarea {
+    height: 950px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 {
+    height: 100px;
+    background-color: rgb(71, 197, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 75px;
+    background-color: #fdf6ff;
+    margin-left: 9px;
+    margin-right: 9px  ;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    height: 300px;
+    background-color: rgb(148, 148, 255);
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.banner1 {
+    width: 800px; /*Updated width to accommodate padding and margin*/
+    height: 280px;
+    background-color: #fdf6ff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.box0, .box2 {
+    width: 180px; /*Updated width to accommodate padding and margin*/
+    height: 80px;
+    background-color: #fdf6ff;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cuerpo {
+    height: 500px;
+    display: flex;
+    background-color: rgb(247, 194, 130);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.aside1, .articulo, .aside2 {
+    height: 480px;
+    background-color: #fdf6ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.aside1 {
+    flex-basis: 200px; /*Updated flex-basis to accommodate padding and margin*/
+    width: 300px;
+    margin-left: 32px;
+}
+
+.articulo {
+    flex-basis: 500px; /*Updated flex-basis to accommodate padding and margin*/
+    width: 500px;
+}
+
+.aside2 {
+    flex-basis: 200px; /*Updated flex-basis to accommodate padding and margin*/
+}
+
+.pies {
+    height: 50px;
+    background-color: rgb(250, 210, 162);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
