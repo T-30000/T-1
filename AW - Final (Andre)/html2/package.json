@@ -1,0 +1,16 @@
+{
+  "name": "html2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content html2.html --output sass/final.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-next": "^1.0.5"
+  }
+}

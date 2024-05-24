@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/html2/sass/final.css">
+    <link rel="icon" href="/imagenes/Hongo.jpg">
+    <title>Maquetado 2</title>
+</head>
+<body>
+    <!-- ========== Start Navbar ========== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HIGHEST MAGICAL ANIMAL</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-dark boton2" data-bs-toggle="modal" data-bs-target="#ModalPrincipal">Página Principal</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#ModalAcerca">Acerca de</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#ModalServicios">Servicios</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#ModalProductos">Productos</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#ModalContacto">Contacto</button>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><button type="button" class="btn btn-dark btn2" data-bs-toggle="modal" data-bs-target="#ModalBlog">👨‍🦲</button></li>
+                    <li><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalBlog">🔍</button></li>
+                    <li><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalBlog">🛒</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    <!-- ========== Start Encabezado ========== -->
+    <header class="header1">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <p class="text-success fs-1"><b class="text-warning fs-1">Animales magicos</b> Como nunca antes habias visto</p>
+                <h1 class="text-warning fs-0">Glosario de animales</h1>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Encabezado ========== -->
+    <!-- ========== Start Cuerpo ========== -->
+    <div class="container d-flex justify-content-center p-3">
+        <div class="row">
+            <!--Titulo ---->
+            <div class="row container">
+                <h2 class="text-center fs-1">Bienvenidos al magico mundo HIGH</h2>
+            </div>
+            
+
+            <!--Botones-->
+            <div class="row container">
+                <div class="col-md-3"><button id="btn-seguro" type="button" class="btn btn-control btn-success fs-5">Nivel de amenaza
+                        bajo</button></div>
+                <div class="col-md-3"><button id="btn-precaucion" type="button" class="btn btn-control btn-warning fs-5">Nivel de
+                        amenaza medio</button></div>
+                <div class="col-md-3"><button id="btn-peligro" type="button" class="btn btn-control btn-danger fs-5">Nivel de amenaza
+                        alto</button></div>
+            </div>
+            <div class="row container">
+                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Aguila.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Aguila Bromeadora</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Esta águila no vuela, corre en chistes.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-success">Nivel de amenaza: Bajo</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Media========== -->
+                <div class="card amenaza-media overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Pescado.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Cuy Veracruzano</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Cuidado o di adios al dedo.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-warning">Nivel de amenaza: Medio</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Alta========== -->
+                <div class="card amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Rata.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Rata explosiva</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Riko amara esta, porque hace K-BOOM</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-danger">Nivel de amenaza: Alto</p>
+                        <!--Boton--->
+                        <a href="/HTML 3/html3.html" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Comprar</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Aguila.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Aguila Bromeadora</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Esta águila no vuela, corre en chistes.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-success">Nivel de amenaza: Bajo</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Media========== -->
+                <div class="card amenaza-media overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Pescado.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Cuy Veracruzano</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Cuidado o di adios al dedo.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-warning">Nivel de amenaza: Medio</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Alta========== -->
+                <div class="card amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Rata.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Rata explosiva</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Riko amara esta, porque hace K-BOOM</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-danger">Nivel de amenaza: Alto</p>
+                        <!--Boton--->
+                        <a href="/HTML 3/html3.html" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Comprar</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Aguila.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Aguila Bromeadora</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Esta águila no vuela, corre en chistes.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-success">Nivel de amenaza: Bajo</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Media========== -->
+                <div class="card amenaza-media overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Pescado.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Cuy Veracruzano</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Cuidado o di adios al dedo.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-warning">Nivel de amenaza: Medio</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Alta========== -->
+                <div class="card amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Rata.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Rata explosiva</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Riko amara esta, porque hace K-BOOM</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-danger">Nivel de amenaza: Alto</p>
+                        <!--Boton--->
+                        <a href="/HTML 3/html3.html" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Comprar</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Aguila.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Aguila Bromeadora</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Esta águila no vuela, corre en chistes.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-success">Nivel de amenaza: Bajo</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Media========== -->
+                <div class="card amenaza-media overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Pescado.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Cuy Veracruzano</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Cuidado o di adios al dedo.</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-warning">Nivel de amenaza: Medio</p>
+                        <!--Boton--->
+                        <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Alta========== -->
+                <div class="card amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img src="/html2/imagenes/Rata.jpg" class="card-img-top rounded-circle " alt="...">
+                    <div class="card-body">
+                        <!--Titulo-->
+                        <h5 class="fs-3 text-center ">Rata explosiva</h5>
+                        <!--Texto-->
+                        <p class="fs-5 text-center ">Riko amara esta, porque hace K-BOOM</p>
+                        <!--Estrellas--->
+                        <p class="text-center fs-7  alert-danger">Nivel de amenaza: Alto</p>
+                        <!--Boton--->
+                        <a href="/HTML 3/html3.html" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Comprar</a>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+            </div>
+        </div>
+    </div>
+    <hr>
+    <header class="header2">
+        <div class="container">
+            <div class="row d-flex justify-content-center p-3">
+                <!-- Usa col-sm-6 para que sea responsive en pantallas pequeñas -->
+                <div class="col-sm-6 d-flex justify-content-center container3">
+                    <h1 class="fs-1 text-success text-center">Gran caza</h1>
+                    <h2 class="fs-3 text-danger text-center"><b>Peligro al asecho o el comienzo de una aventura</b></h2>
+                    <p class="fs-5 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deleniti minus id nesciunt veniam commodi et sequi quas aut facere non repellendus eos! Aliquam possimus ut ducimus praesentium quasi optio.</p>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center overflow-hidden container3 container-fluid">
+                    <img src="/html2/imagenes/Fondo1.jpg" class="rounded img-fluid" alt="..." style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="container d-flex justify-content-center p-3">
+            <!--Titulo ---->
+            <div class="row container">
+                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card2 amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-success">Nivel de amenaza: Bajo</p>
+                            <!--Boton--->
+                            <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: media========== -->
+                <div class="card2 amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-warning">Nivel de amenaza: media</p>
+                            <!--Boton--->
+                            <a href="/html2/html2.html" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card2 amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-danger">Nivel de amenaza: Alta</p>
+                            <!--Boton--->
+                            <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card2 amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-success">Nivel de amenaza: Bajo</p>
+                            <!--Boton--->
+                            <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: media========== -->
+                <div class="card2 amenaza-baja overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-warning">Nivel de amenaza: media</p>
+                            <!--Boton--->
+                            <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+                <!-- ========== Start Carta # - Amenaza nivel: Baja========== -->
+                <div class="card2 amenaza-alta overflow-hidden shadow p-3 mb-5 bg-body rounded col-lg-3 col-md-4 col-sm-6" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <img src="/html2/imagenes/Aguila.jpg" class="card2-img-top rounded-circle " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card2-body align-items-center justify-content-center">
+                            <!--Titulo-->
+                            <h5 class="fs-4 text-center ">Aguila Bromeadora</h5>
+                            <!--Texto-->
+                            <p class="fs-6 text-center ">Esta águila no vuela, corre en chistes.</p>
+                            <!--Estrellas--->
+                            <p class="text-center fs-6  alert-danger">Nivel de amenaza: Alta</p>
+                            <!--Boton--->
+                            <a href="#" class="btn btn-danger fs-6 text-center d-flex justify-content-center">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Carta # - Amenaza nivel: Baja========== -->
+            </div>
+        </div>
+    <header>
+            <div class="container">
+                <div class="row d-flex justify-content-center p-3">
+                    <!-- Usa col-sm-6 para que sea responsive en pantallas pequeñas -->
+                    <div class="col-sm-6 d-flex justify-content-center container3">
+                        <h1 class="fs-1 text-success text-center">Gran caza</h1>
+                        <h2 class="fs-3 text-danger text-center"><b>Peligro al asecho o el comienzo de una aventura</b></h2>
+                        <p class="fs-5 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deleniti minus id nesciunt veniam commodi et sequi quas aut facere non repellendus eos! Aliquam possimus ut ducimus praesentium quasi optio.</p>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-center overflow-hidden container3 container-fluid">
+                        <img src="/html2/imagenes/Fondo1.jpg" class="rounded img-fluid" alt="..." style="width: 100%;">
+                    </div>
+
+                </div>
+            </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div class="w-75 p-3 row container-fluid">
+                <div class="col-md-3 container-fluid">
+                    <h2 class="fs-4">Información</h2>
+                    <ul style="list-style-type: none;">
+                        <li class="nav-item">Misión de la empresa</li>
+                        <li class="textrr">Visión de la empresa</li>
+                        <li class="textrr">Valores de la empresa</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 container-fluid">
+                    <h2 class="fs-4">Ayuda</h2>
+                    <ul style="list-style-type: none;">
+                        <li class="textrr">FAQs</li>
+                        <li class="textrr">Soporte al cliente</li>
+                        <li class="textrr">Guías del usuario</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 container-fluid">
+                    <h2 class="fs-4">Dirección</h2>
+                    <ul style="list-style-type: none;">
+                        <li class="textrr">Calle de la empresa, número</li>
+                        <li class="textrr">Ciudad, Código Postal</li>
+                        <li class="textrr">País</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 container-fluid">
+                    <h2 class="fs-4">Contactos</h2>
+                    <ul style="list-style-type: none;">
+                        <li class="textrr">Teléfono: +1 234 567 890</li>
+                        <li class="textrr">Correo electrónico: info@empresa.com</li>
+                        <li class="textrr">Horarios de atención: 9AM - 5PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Cuerpo ========== -->
+    <!-- ========== Start script ========== -->
+        <script>
+            // Selecciona los botones
+            var btnSeguro = document.getElementById('btn-seguro');
+            var btnPrecaucion = document.getElementById('btn-precaucion');
+            var btnPeligro = document.getElementById('btn-peligro');
+
+            // Agrega el evento de click a cada botón
+            btnSeguro.addEventListener('click', function () { toggleVisibility('amenaza-baja'); });
+            btnPrecaucion.addEventListener('click', function () { toggleVisibility('amenaza-media'); });
+            btnPeligro.addEventListener('click', function () { toggleVisibility('amenaza-alta'); });
+
+            // Define la función para mostrar/ocultar elementos
+            function toggleVisibility(className) {
+                // Get elements of all classes
+                var lowRisk = document.getElementsByClassName('amenaza-baja');
+                var mediumRisk = document.getElementsByClassName('amenaza-media');
+                var highRisk = document.getElementsByClassName('amenaza-alta');
+                var allElements = [...lowRisk, ...mediumRisk, ...highRisk];
+
+                // Hide all elements
+                for (var i = 0; i < allElements.length; i++) {
+                    allElements[i].classList.add('hidden');
+                }
+
+                // Get elements of the selected class
+                var elements = document.getElementsByClassName(className);
+
+                // Show elements of the selected class
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].classList.remove('hidden');
+                }
+            }
+
+        </script>
+    <!-- ========== End script ========== -->
+
+    
+    <!-- ========== Start Modales ========== -->
+            <!-- Modal Principal -->
+            <div class="modal fade" id="ModalPrincipal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Ya estas aquí</h5>
+                        </div>
+                        <div class="modal-body">
+                            🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨🤨
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Acerca -->
+            <div class="modal fade" id="ModalAcerca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Información</h5>
+                        </div>
+                        <div class="modal-body">
+                            CONTENIDO PRIVADO
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Servicios -->
+            <div class="modal fade" id="ModalServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">No hay servicio</h5>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Productos -->
+            <div class="modal fade" id="ModalProductos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Información</h5>
+                        </div>
+                        <div class="modal-body">
+                            Depende que tipo de animal mitico quieras adoptar, o te vas a morir tu o ella...
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Contacto -->
+            <div class="modal fade" id="ModalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Información</h5>
+                        </div>
+                        <div class="modal-body">
+                            No🗿
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Blog -->
+            <div class="modal fade" id="ModalBlog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Blog</h5>
+                        </div>
+                        <div class="modal-body">
+                            Flojera escribir
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repudiandae minima sunt incidunt veritatis fugiat placeat corrupti alias maiores, laboriosam voluptates totam voluptate illo amet quos magni, repellat at!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- ========== End Modales ========== -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

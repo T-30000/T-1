@@ -1,0 +1,309 @@
+$primary-color: #adceff;
+$secondary-color: #efe9f8;
+$dark-primary-color: #3676d6;
+$color-body: #dfe4fd;
+$color-header: #bec9ff;
+$warning-color: #f8e804;
+$danger-color: rgb(255, 0, 0);
+$success-color: rgb(3, 218, 14);
+$alert-warning-color: #fffbc3;
+$alert-danger-color: rgb(250, 188, 188);
+$alert-success-color: rgba(186, 255, 190, 0.993);
+$black-color: #000;
+$modal-title-color: rgb(27, 27, 82);
+
+body {
+    background-color: $color-body !important;
+}
+.rounded-circle
+{
+    box-shadow: #000 !important;
+}
+
+.navbar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.text-warning {
+    color: $warning-color;
+}
+
+header {
+    box-shadow: 0 1rem 3rem rgba($black-color, .175);
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    padding: 3%;
+}
+.header1 {
+    background-image: url("/imagenes/Fondo1.jpg");
+    background-size: cover;
+}
+.header2 {
+    background-color: $color-header !important;
+}
+
+.navbar-light.bg-light {
+    background-color: $primary-color !important;
+}
+
+.btn-dark {
+    background-color: $black-color;
+    color: $secondary-color !important;
+}
+
+.btn {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    height: 40px !important;
+    max-height: 40px !important;
+    margin-top: 0.3em;
+}
+.btn2 {
+    margin-left: 50px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #e2e2e97e!important;
+    color: $black-color !important;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.modal-content {
+    background-color: $secondary-color;
+    height: 400px;
+}
+
+.modal-title {
+    font-size: 2em;
+    color: $warning-color;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #778dad;
+}
+
+.container {
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: center ;
+    align-items: center ;
+    width: 100% ;
+    padding: 2%;
+    margin: 10px ;
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        overflow: hidden;
+    }
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 260px !important;
+    max-height: 450px !important;
+    width: 260px !important;
+    height: 450px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    // Asegurar que el contenido de la tarjeta no sobrepase su tamaño
+    overflow: hidden !important;
+}
+.modal-body
+{
+    background-color: $secondary-color !important;;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    margin: 20px;
+    background-color: $primary-color !important;
+}
+
+.card-img-top {
+    max-width: 150px !important;
+    max-height: 150px !important;
+    margin-top: 10px !important;
+
+    // Centrar la imagen en la tarjeta
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.card-title, .card-text, .btn {
+    font-size: 1em;
+
+    // Centrar el texto y los botones en la tarjeta
+    display: flex;
+    flex-direction: column!important;
+    align-items: center !important;
+    justify-content: center  !important;
+}
+.card2 {
+    width: 30em !important;
+    height: 20em !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    padding: 5%;
+    margin: 10px;
+    margin-right: 2% !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    //Asegurarqueelcontenidodelatarjetanosobrepasesutamaño
+    overflow: hidden !important;
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+footer
+{
+    background-color: $dark-primary-color;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    color: aliceblue;
+}
+.modal-body
+{
+background-color: $secondary-color !important;
+}
+
+.card2:hover {
+transform: scale(1.03);
+}
+
+.card2-img-top {
+width: 100px !important;
+height: 100px !important;
+margin-top: 10px !important;
+
+// Centrar la imagen en la tarjeta
+display: block !important;
+margin-left: auto !important;
+margin-right: 10px !important;
+}
+
+.card2-title, .card2-text, .btn {
+font-size: 0.6em;
+// Centrar el texto y los botones en la tarjeta
+display: flex;
+flex-direction: column!important;
+align-items: center !important;
+justify-content: center  !important;
+}
+.rounded
+{
+border-radius: 20% !important;
+-webkit-border-radius: 200% !important;
+-moz-border-radius: 200% !important;
+-ms-border-radius: 200% !important;
+-o-border-radius: 200% !important;
+}
+.alert-danger, .alert-success, .alert-warning
+{
+    font-size: 1.2em;
+    color: $black-color !important;
+    padding: 6px !important;
+}
+.alert-warning {
+    background-color: $alert-warning-color !important;
+        
+}
+
+.alert-success {
+    background-color: $alert-success-color!important;
+}
+
+.alert-danger {
+    background-color: $alert-danger-color!important;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-muted {
+    color: $secondary-color!important;
+}
+.baner1
+{
+    background-color: $primary-color;
+    width: 100% !important;
+    height: 100%;
+}
+
+.fs-0 {
+    font-size: 4em;
+}
+
+.btn-success {
+    background-color: $success-color!important;
+        color: $black-color !important;
+        margin-left: 0.3em !important;
+        margin-right: 0.3em !important;
+}
+
+.btn-warning {
+    background-color: $warning-color!important;
+        color: $black-color !important;
+        margin-left: 0.3em !important;
+        margin-right: 0.3em !important;
+}
+
+.btn-danger {
+    background-color: $danger-color!important;
+    margin-left: 0.3em !important;
+        margin-right: 0.3em !important;
+}
+.btn-control
+{
+    width: 300px !important;
+    max-width: 300px  !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
