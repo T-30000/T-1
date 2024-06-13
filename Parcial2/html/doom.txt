@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/doom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica con doom</title>
+</head>
+<body>
+    <!--1 Metodo GetElementById y propiedad innerHTML -->
+        <!-- Cambia el contenido innerHtml -->
+        <p id="demo"></p>
+        <!-- cambiar el contenido de la etiqueta p -->
+        <p id="p1">Clase p1</p>
+            <!-- Script de este -->
+            <script>
+                document.getElementById("p1").innerHTML="¡Jicamas con chile¡";
+            </script>
+        <!-- cambiar el contenido de un elemento h1 -->
+        <h1 id="titulo">No hay jicamas con chile¡</h1>
+            <!-- script para encabezado h1 -->
+            <script>
+                const elemento = document.getElementById("titulo");
+                elemento.innerHTML="Ahora si hay jicamas con chile";
+            </script>
+    <!--2 Busqueda de elementos HTML por nombre de etiqueta -->
+            <!-- Encontrar todos los elementos p -->
+                <script>
+                    const element = document.getElementsByName("p");
+                </script>
+            <!-- Encontrar elemento con id main y despues los elementos p dentro del main -->
+                <script>
+                    const x = document.getElementById("main");
+                    console.log(x);
+                    const y = document.getElementById("p");
+                    console.log(y);
+                </script>
+    <!--3 Encontrar elementos por nombre de clases -->
+            <!-- Elementos con el mismo nombre de una clase, se puede usar el getElementsByClassName -->
+                <script>
+                    const a = document.getElementsByClassName("intro");
+                    console.log(a);
+                </script>
+    <!--4 Busqueda de elementos HTML mediante selectores de css -->
+            <!-- Devolver lista de todos los elementos p con clase into -->
+                <p class="intro">Manzanas de ejemplo 1</p>
+                <p class="intro">Peras de segundo ejemplo</p>
+                <script>
+                    const b = element.querySelectorAll("p.intro");
+                </script>
+            <!-- Encuentra los elementos li hijos de ul desordenado, con minimo 5 elementos -->
+                <script>
+                    const listItems = document.querySelectorAll("ul > li");
+                    console.log(listItems);
+                </script>
+            <!-- Encontrar y imprimir el elemento h1 -->
+                <script>
+                    const h1Element = document.querySelectorAll("h1");
+                    console.log(h1Element);
+                </script>
+            <!-- Encontrar la clase list usando querySelector() -->
+                <script>
+                    const list = document.querySelectorAll(".list");
+                    console.log(list);
+                </script>
+            <!-- Imprimir los elementos li haciendo uso de forEach() para iterar sobre la nodeList e imprimir cada uno -->
+                <script>
+                    const listaDeElementos = document.querySelectorAll("ul > li");
+                    listaDeElementos.forEach((item) => {
+                            console.log(item);
+                        }
+                    )
+                </script>
+            <!-- Uso de la propiedad style para cambiar estilos en linea CSS -->
+                <script>
+                    const h1 = document.querySelectorAll("h1");
+                    h1.style.color = "blue";
+                </script>
+    
+    <!--5 Busqueda de elementos HTML por colecciones de objetos HTML -->
+            <!-- Encontrar el elemento de formulario con id="frm1", en la conleccion de formlarios, y muestra todos los valores de los elementos -->
+                <script>
+                    const c = document.forms["form1"];
+                    let texto = "";
+                    for(let i = 0; i < x-length; i++)
+                    {
+                        texto *= x.element[i].value + "<br>";
+                    }
+                    document.getElementById("demo").innerHTML = texto;
+                    console.log(c);
+                </script>
+    <!--6 Agregar nuevos elementos al documento HTML -->
+            <!-- Agregar elementos al árbol del DOM usando los métodos document.createElement(), appendChild() y haciendo uso de la propiedad textContent. -->
+                <script>
+                    let lista = document.createElement("ul");
+                    document.body.appendChild(lista);
+                    let elemento1 = document.createElement("li");
+                    elemento1.textContent = "Flores";
+                    lista.appendChild(elemento1);
+                    let elemento2 = document.createElement("li");
+                    elemento2.textContent = "Jaguar";
+                    lista.appendChild(elemento2);
+                </script>
+    <!--7 Usando el metodo addEventListener() para escuchar eventos en la página -->
+            <!-- Crea un botón en el documento html, donde al hacer click aparezca un mensaje de alerta. -->
+                <script>
+                    const button = document.getElementById("btn");
+                    button.addEventListener("click", () => {
+                        alert("No me toques")});
+                </script>
+    <!--8 validación de formulario -->
+            <!-- Si un campo de formulario (name) esta vacío, se muestra una alerta con un mensaje y devuelve falso para evitar que se envíe y se redireccione a otra página. -->
+                <script>
+                    function validarFormulario()
+                    {
+                        let x = document.forms["miformulario"]["nombre"].value;
+                        if(x == "")
+                        {
+                            alert("Se debe completar el nombre");
+                            return false;
+                        }
+                    }
+                </script>
+            <!-- Valida la entrada numérica que valide que la entrada sea numérica y que este en un rango entre 1 y 1 . Para ello crea un input con id=”numero”, un botón de type=”button” y que contenga el atributo onclick donde se le asigne el valor de la función. Crea también una etiqueta <p> con id=”demo”. -->
+                <script>
+                    function mifuncion()
+                    {
+                        let x = document.getElementById("numero").value;
+                        let texto;
+                        if(isNaN(x) ||x<1 || x>10)
+                            {
+                                texto = "entrada no valida";
+                            }
+                            else
+                            {
+                                texto = "Entrada correcta";
+                            }
+                            document.getElementById("demo").innerHTML = texto;
+                    }
+                </script>
+    <!--9 Cambiar el valor de un atributo -->
+            <!-- Cambiar el valor de un atributo src de un elemento <img>. -->
+                <script>
+                    document.getElementById("miImagen").src = "cat.jpg";
+                </script>
+    <!--10 Contenido dinámico -->
+            <!-- Agregar la hora actual a una etiqueta con id=”demo”. -->
+                <script>
+                    document.getElementById("demo").innerHTML = "fecha: "+Date();
+                </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/doom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Practica con doom</title>
+</head>
+<body>
+    <!--1 Metodo GetElementById y propiedad innerHTML -->
+    <h1 id="titulo">No hay jicamas con chile¡</h1>
+    <p id="p1">Clase p1</p>
+
+    <!--2 Busqueda de elementos HTML por nombre de etiqueta -->
+    <div id="main">
+        <p id="p">Parrafo dentro de Main</p>
+    </div>
+
+    <!--3 Encontrar elementos por nombre de clases -->
+    <div class="intro"></div>
+
+    <!--4 Busqueda de elementos HTML mediante selectores de css -->
+    <p class="intro">Manzanas de ejemplo 1</p>
+    <p class="intro">Peras de segundo ejemplo</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!--5 Busqueda de elementos HTML por colecciones de objetos HTML -->
+    <form id="form1"></form>
+
+    <!--6 Agregar nuevos elementos al documento HTML -->
+
+    <!--7 Usando el metodo addEventListener() para escuchar eventos en la página -->
+    <button id="btn" class="btn-primary">Tocame</button><br>
+    <br>
+    <!--8 validación de formulario -->
+    <form name="miformulario" class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">💀</span>
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="nombre" aria-describedby="basic-addon1" name="nombre">
+        <button class="btn btn-outline-secondary" type="button" id="nombre">Enviar</button>    
+    </form>
+
+    <!-- Valida la entrada numérica que valide que la entrada sea numérica y que este en un rango entre 1 y 10 -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Ingrese un numero del 1 al 10" aria-label="Ingrese un numero del 1 al 10" aria-describedby="button-addon2" for="numero">
+        <button class="btn btn-outline-secondary" type="button" id="numero" onclick="mifuncion()">Validar número</button><br>
+        <p id="demo"></p>
+    </div>
+
+    <!--9 Cambiar el valor de un atributo -->
+    <div>
+        <img id="miImagen" src="../img/Acantilado.jpg" width="400px" height="400px">
+    </div>
+
+    <!--10 Contenido dinámico -->
+    <p id="demoFecha"></p>
+
+    <script>
+        //1
+        document.getElementById("p1").innerHTML = "¡Jicamas con chile¡";
+        const elemento = document.getElementById("titulo");
+        elemento.innerHTML = "Ahora si hay jicamas con chile";
+
+        //2
+        const element = document.getElementsByTagName("p");
+        const x = document.getElementById("main");
+        const y = document.getElementById("p");
+
+        //3
+        const a = document.getElementsByClassName("intro");
+
+        //4
+        const b = document.querySelectorAll("p.intro");
+        const listItems = document.querySelectorAll("ul > li");
+
+        //5
+        const c = document.forms["form1"];
+        let texto = "";
+        for (let i = 0; i < c.length; i++) {
+            texto += c.elements[i].value + "";
+        }
+        document.getElementById("demo").innerHTML = texto;
+
+        //6
+        let lista = document.createElement("ul");
+        document.body.appendChild(lista);
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "Flores";
+        lista.appendChild(elemento1);
+        let elemento2 = document.createElement("li");
+        elemento2.textContent = "Jaguar";
+        lista.appendChild(elemento2);
+
+        //7
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            alert("No me toques")
+        });
+
+        //8
+        function validarFormulario() {
+            let x = document.forms["miformulario"]["nombre"].value;
+            if (x == "") {
+                alert("Se debe completar el nombre");
+                return false;
+            }
+        }
+
+        // Valida la entrada numérica que valide que la entrada sea numérica y que este en un rango entre 1 y 10
+        function mifuncion() {
+            let d = document.getElementById("numero").value;
+            let texto;
+            if (isNaN(d) || d < 1 || d > 10) {
+                texto = "entrada no valida";
+            } else {
+                texto = "Entrada correcta";
+            }
+            document.getElementById("demo").innerHTML = texto;
+        }
+
+        //9
+        document.getElementById("miImagen").src = "../img/Atardecer.jpg";
+
+        //10
+        document.getElementById("demoFecha").innerHTML = "fecha: " + Date();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

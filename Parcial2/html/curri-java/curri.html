@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!---
+    Universidad Tecnologica Metropolitana
+    Tercer Cuatrimestre
+    Grupo A
+    Alumno. Gioser Andre Dzib Chan
+    Desarrollo de Software Multiplataforma
+    Prof. Ruth
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum</title>
+    <link rel="icon" href="/Curriculum/Imagenes/Sticker 1.png">
+    <link rel="stylesheet" type="text/css" href="./curri.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="tarea">
+        <div class="encabezado">
+            <div class="imagen">
+                <img src="./Sticker 1.png" alt="foto">
+            </div>
+            <div class="nombre">
+                <h1 id="nombre">Gioser Andre Dzib Chan</h1>
+                <!-- script para cambiar nombre titular -->
+                <p class="text4">Desarrollador Web</p><br>
+                <hr>
+                <!-- Formulario para agregar habilidades con estilo de bootstrap -->
+                <form id="formHabilidades" class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nueva Habilidad:</span>
+                    <input type="text" id="habilidad" name="habilidad" class="form-control" aria-label="Habilidad"
+                        aria-describedby="basic-addon1">
+                    <button class="btn btn-outline-secondary" type="submit">Agregar Habilidad</button>
+                </form>
+
+                <!-- Formulario para agregar opiniones con estilo de bootstrap -->
+                <form id="formOpiniones" class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Nueva Opinión:</span>
+                    <input type="text" id="opinion" name="opinion" class="form-control" aria-label="Opinión"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon3">Puntuación (1-10):</span>
+                    <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" class="form-control"
+                        aria-label="Puntuación" aria-describedby="basic-addon3">
+                    <button class="btn btn-outline-secondary" type="submit">Agregar Opinión</button>
+                </form>
+
+                <!-- formulario para agregar habilidad -->
+                <!-- validador de ingresar texto -->
+                <!-- formulario para agregar opinion con su puntuacion del 1 al 10 -->
+                <!-- Validador de números del 1 al 10 -->
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-5">
+                <div class="resumen">
+                    <h2 class="text3">Perfil Profesional</h2>
+                    <p class="text4">Soy un profesional en desarrollo, soy full stack, pero lo que más me apasiona
+                        backend</p>
+                </div>
+                <div class="experiencia">
+                    <h2 class="text3">Experiencia Laboral</h2>
+                    <div class="trabajo">
+                        <h3 class="text4">Developer</h3>
+                        <p class="text4">Ultima empresa: Google</p>
+                        <p class="text4"><strong>Periodo de tiempo:</strong> 2020 - 2028</p>
+                        <p class="text4">Me gusta otimizar todo en lo mas posible, no me gusta complicarme la vida</p>
+                    </div>
+                </div>
+                <div class="educacion">
+                    <h2 class="text3">Educación</h2>
+                    <div>
+                        <h3 class="text4">Ingeniería en Desarrollo de Software</h3>
+                        <p class="text4">Universidad Tecnológica Metropolitana</p>
+                        <p class="text4"><strong>Período:</strong> 2021 - Presente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="biografia">
+                    <h5 class="text3">Gioser Andre Dzib Chan</h5>
+                    <p class="text4"><b>Descripcion: </b>Me gusta el dinero, haré cualquier trabajo (hasta que sea
+                        posible) si hay una buena paga de por medio</p>
+                    <p class="text4"><b>Que me gusta: </b>Me encanta todo lo relacionado al arte, dibujo, canto, musica,
+                        etc.</p>
+                    <p class="text4"><b>Que quiero: </b>Dinero</p>
+                    <br>
+                    <h5 class="text4">Datos de contacto</h5>
+                    <ul>
+                        <li><strong>Número telefonico:</strong> 90650511</li>
+                        <li><strong>Email:</strong>roi.eljajas@gmail.com</li>
+                        <li><strong>Dirección:</strong>Mi casa, mi cuarto</li>
+                    </ul>
+                    <hr>
+                    <h4 class="text3">Como considero mis habilidades</h4>
+                    <p class="text4" id="pensamiento">Matemáticas: <b id="calificacion">8</b></p>
+                    <br>
+                </div><br>
+            </div>
+        </div>
+        
+    </div><br><br><br>
+    <div class="tarea">
+        <div class="habilidades">
+            <h2 class="text3">Habilidades</h2>
+            <ul>
+                <li class="text4">Arduino</li>
+                <li class="text4">PHP</li>
+                <li class="text4">DataBase</li>
+                <li class="text4">WebPage</li>
+                <li class="text4">Contabilidad</li>
+                <li class="text4">Gestion de proyectos</li>
+                <li class="text4">Java</li>
+                <li class="text4">Python</li>
+                <li class="text4">C#</li>
+                <li class="text4">C++</li>
+                <li class="text4">Diseño</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('formHabilidades').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var nuevaHabilidad = document.getElementById('habilidad').value;
+            // Verificar que la habilidad no esté vacía antes de agregarla a la lista
+            if (nuevaHabilidad.trim() !== '') {
+                var listaHabilidades = document.querySelector('.habilidades ul');
+                var nuevaListaHabilidades = document.createElement('li');
+                nuevaListaHabilidades.textContent = nuevaHabilidad;
+                listaHabilidades.appendChild(nuevaListaHabilidades);
+                // Limpiar el campo de habilidad después de agregarlo a la lista
+                document.getElementById('habilidad').value = '';
+            } else {
+                alert('No puedes agregar texto vacio cahufa.');
+            }
+        });
+        document.getElementById('formOpiniones').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var nuevaOpinion = document.getElementById('opinion').value;
+            var puntuacion = document.getElementById('puntuacion').value;
+            // Agregar la nueva opinión y puntuación al documento
+            var seccionOpiniones = document.querySelector('.biografia');
+            var listaOpiniones = document.createElement('ul');
+            var nuevaOpinionElemento = document.createElement('li');
+            nuevaOpinionElemento.textContent = `${nuevaOpinion} - calificacion: ${puntuacion}`;
+            listaOpiniones.appendChild(nuevaOpinionElemento);
+            seccionOpiniones.appendChild(listaOpiniones);
+        });
+        // Buscar todos los elementos con una cierta clase
+        var elementosConClase = document.getElementsByClassName('text4');
+        console.log(elementosConClase);
+        // Contar el número de elementos de una cierta etiqueta
+        var numeroDeElementos = document.getElementsByTagName('p').length;
+        console.log(numeroDeElementos);
+        // Buscar un elemento por su ID
+        var elementoPorId = document.getElementById('nombre');
+        console.log(elementoPorId);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

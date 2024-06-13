@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/doom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Practica con doom</title>
+</head>
+<body>
+    <!--1 Metodo GetElementById y propiedad innerHTML -->
+        <!-- Cambia el contenido innerHtml -->
+        <p id="demo">clase demo</p>
+        <!-- cambiar el contenido de la etiqueta p -->
+        <p id="p1">Clase p1</p>
+            <!-- Script de este -->
+            <script>
+                document.getElementById("p1").innerHTML="¡Jicamas con chile¡";
+            </script>
+        <!-- Camiar el elemento de una etiqueta p intro -->
+            <p id="intro">Clase intro</p>
+                <!-- Script de este -->
+                <script>
+                    const elementointro = document.getElementById("intro");
+                </script>
+        <!-- cambiar el contenido de un elemento h1 -->
+        <h1 id="titulo">No hay jicamas con chile¡</h1>
+            <!-- script para encabezado h1 -->
+            <script>
+                const elemento = document.getElementById("titulo");
+                elemento.innerHTML="Ahora si hay jicamas con chile";
+            </script>
+    <!--2 Busqueda de elementos HTML por nombre de etiqueta -->
+        <div id="main">
+            <p id="p">Parrafo dentro de Main</p>
+        </div>
+            <!-- Encontrar todos los elementos p -->
+            <script>
+                const elementP = document.getElementsByName("p");
+                console.log(elementP)
+            </script>
+        <!-- Encontrar elemento con id main y despues los elementos p dentro del main -->
+            <script>
+                const x = document.getElementById("main");
+                console.log(x);
+                const y = document.getElementById("p");
+                console.log(y);
+            </script>
+    <!--3 Encontrar elementos por nombre de clases -->
+            <!-- Elementos con el mismo nombre de una clase, se puede usar el getElementsByClassName -->
+            <script>
+                const a = document.getElementsByClassName("intro");
+                console.log(a);
+            </script>
+    <!--4 Busqueda de elementos HTML mediante selectores de css -->
+            <!-- Devolver lista de todos los elementos p con clase into -->
+            <p class="intro">Manzanas de ejemplo 1</p>
+            <p class="intro">Peras de segundo ejemplo</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            <script>
+                const b = document.querySelectorAll("p.intro");
+            </script>
+        <!-- Encuentra los elementos li hijos de ul desordenado, con minimo 5 elementos -->
+            <script>
+                const listItems = document.querySelectorAll("ul > li");
+                console.log(listItems);
+            </script>
+        <!-- Encontrar y imprimir el elemento h1 -->
+            <script>
+                const h1Element = document.querySelectorAll("h1");
+                console.log(h1Element);
+            </script>
+        <!-- Encontrar la clase list usando querySelector() -->
+            <script>
+                const list = document.querySelectorAll(".list");
+                console.log(list);
+            </script>
+        <!-- Imprimir los elementos li haciendo uso de forEach() para iterar sobre la nodeList e imprimir cada uno -->
+            <script>
+                const listaDeElementos = document.querySelectorAll("ul > li");
+                listaDeElementos.forEach((item) => {
+                        console.log(item);
+                    }
+                )
+            </script>
+        <!-- Uso de la propiedad style para cambiar estilos en linea CSS -->
+            <script>
+                const h1 = document.querySelectorAll("h1");
+                h1.style.color = "blue";
+            </script>
+    <!--5 Busqueda de elementos HTML por colecciones de objetos HTML -->
+    <form id="form1"></form>
+            <!-- Encontrar el elemento de formulario con id="frm1", en la conleccion de formlarios, y muestra todos los valores de los elementos -->
+            <script>
+                const c = document.forms["form1"];
+                let texto = "";
+                for(let i = 0; i < x-length; i++)
+                {
+                    texto *= x.element[i].value + "<br>";
+                }
+                document.getElementById("demo").innerHTML = texto;
+                console.log(c);
+            </script>
+    <!--6 Agregar nuevos elementos al documento HTML -->
+    <button id="btn" class="btn-primary">Tocame</button><br>
+            <!-- Agregar elementos al árbol del DOM usando los métodos document.createElement(), appendChild() y haciendo uso de la propiedad textContent. -->
+            <script>
+                let lista = document.createElement("ul");
+                document.body.appendChild(lista);
+                let elemento1 = document.createElement("li");
+                elemento1.textContent = "Flores";
+                lista.appendChild(elemento1);
+                let elemento2 = document.createElement("li");
+                elemento2.textContent = "Jaguar";
+                lista.appendChild(elemento2);
+            </script>
+    <!--7 Usando el metodo addEventListener() para escuchar eventos en la página -->
+
+            <!-- Crea un botón en el documento html, donde al hacer click aparezca un mensaje de alerta. -->
+            <script>
+                const button = document.getElementById("btn");
+                button.addEventListener("click", () => {
+                    alert("No me toques")});
+            </script>
+    <!--8 validación de formulario -->
+    <form name="miformulario" class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">💀</span>
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="nombre" aria-describedby="basic-addon1" name="nombre">
+        <button class="btn btn-outline-secondary" type="button" id="nombre" onclick="validarFormulario()">Enviar</button>    
+    </form>
+        <!-- script de este -->
+        <script>
+            function validarFormulario() {
+                let x = document.forms["miformulario"]["nombre"].value;
+                if (x == "") {
+                    alert("Se debe completar el nombre");
+                    return false;
+                }
+            }
+        </script>
+
+    <!-- Valida la entrada numérica que valide que la entrada sea numérica y que este en un rango entre 1 y 10 -->
+    <form name="miformulario" class="input-group mb-3">
+        <input type="number" min="1" max="10" class="form-control" placeholder="Ingrese un número del 1 al 10" aria-label="Ingrese un número del 1 al 10" aria-describedby="button-addon2" id="numero">
+        <button class="btn btn-outline-secondary" type="button" onclick="mifuncion()">Validar número</button>
+    </form>
+    
+    <p id="validarNumero"></p>
+    
+    <script>
+        function mifuncion() {
+            let d = document.getElementById("numero").value;
+            let texto;
+            if (isNaN(d) || d < 1 || d > 10) {
+                texto = "Entrada no válida";
+            } else {
+                texto = "Entrada correcta";
+            }
+            document.getElementById("validarNumero").innerHTML = texto;
+        }
+    </script>
+    <!--9 Cambiar el valor de un atributo -->
+    <img id="miImagen" src="../img/Atardecer.jpg" width="400px" height="400px">
+    <!--10 Contenido dinámico -->
+    <p id="demoFecha"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

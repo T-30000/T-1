@@ -1,0 +1,8 @@
+body{
+    background-color: aliceblue;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    flex: display;
+    align-content: center;
+}

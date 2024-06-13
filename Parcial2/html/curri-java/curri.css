@@ -1,0 +1,127 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarea {
+    margin-top: 2%;
+    width: 800px;
+    padding: 1%;
+    border: 0px solid black;
+    border-radius: 5%;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col-5 {
+    width: 45%;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nombre h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #365041;
+    text-align: center;
+}
+
+.nombre p {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #5c1779;
+    text-align: center;
+}
+.text3
+{
+    color: #5c1779;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text4
+{
+    color: #422e4a;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.biografia {
+    padding: 2%;
+    border: 0px solid black;
+    border-radius: 4%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    height: 500px;
+}
+
+.biografia p, .biografia h5, .biografia ul {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.biografia ul {
+    list-style: none;
+    padding: 0%;
+}
+
+.biografia li {
+    margin-bottom: 4px;
+}
+
+.resumen, .experiencia, .habilidades, .educacion {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.trabajo h3, .degree h3 {
+    margin-top: 0;
+    color: #511e5f;
+}
+.habilidades
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #62366d;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.1em;
+}

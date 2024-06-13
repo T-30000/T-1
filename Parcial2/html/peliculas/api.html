@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- Este es el documento DOCTYPE HTML5 -->
+<html lang="en">
+<!-- Inicio del documento html, el atributo lang indica el idioma del documento -->
+
+<head>
+    <!-- Inicio de la sección head que contiene información de metadatos -->
+    <meta charset="UTF-8"> <!-- Definición del conjunto de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadato para hacer el sitio web responsivo -->
+    <title>Uso de Apis</title> <!-- Título del sitio web -->
+    <!-- link de google font -->
+    <link rel="preconnect" href="<https://fonts.googleapis.com>">
+    <!-- Preconnect permite al navegador establecer conexiones anticipadas -->
+    <link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
+    <!-- Establece una conexión anticipada con gstatic -->
+    <link href="<https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap>" rel="stylesheet">
+    <!-- Enlace a la fuente Oswald de Google Fonts -->
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./api.css"> <!-- Enlace a la hoja de estilos css -->
+</head> <!-- Fin de la sección head -->
+
+<body>
+    <!-- Inicio del cuerpo del documento -->
+    <div class="container">
+        <!-- División principal que actúa como contenedor -->
+        <div class="search-container">
+            <!-- División para el cuadro de búsqueda -->
+            <input type="text" placeholder="Enter movie name here..." id="movie-name" value="dark knight" />
+            <!-- Campo de entrada para el nombre de la película -->
+            <button id="search-btn">Search</button> <!-- Botón de búsqueda -->
+        </div>
+        <div id="result"></div> <!-- División donde se mostrarán los resultados de la búsqueda -->
+    </div>
+    <script src="./key.js"></script> <!-- Enlace al archivo de script key.js -->
+    <script src="./script.js"></script> <!-- Enlace al archivo de script script.js -->
+</body> <!-- Fin del cuerpo del documento -->
+
+</html> <!-- Fin del documento html -->
