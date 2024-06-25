@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4b300!important;
+}
+
+/* Estilo para el encabezado con fondo de imagen */
+header {
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/cute-pokemon-pikachu-rain-desktop-wallpaper-preview.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    padding: 5em;
+    background-position: center;
+    height: 300px; /* Altura del encabezado ajustable según la imagen */
+    text-align: center;
+    color: white; /* Texto en blanco para contrastar con el fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.barra
+{
+    margin-bottom: 5em;
+    button.btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #f7e0b4;
+        cursor: pointer;
+    }
+    button.btn:hover {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ffe311;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+    }
+}
+
+.container {
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+input.form-control {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+
+.pokemon-info {
+    margin-top: 20px;
+    text-align: left; /* Alinear texto a la izquierda para la información detallada */
+}
+
+.pokemon-info img {
+    width: 15em;
+    height: 10em!important;
+    display: block; /* Asegurar que la imagen se muestre como bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    border-radius: 50%; /* Redondear la imagen */
+}
+
+.pokemon-info h2 {
+    margin: 10px 0 5px;
+}
+
+.pokemon-info p {
+    margin: 5px 0;
+}
+
+.pokemones {
+    margin-top: 4em;
+    width: auto;
+    height: auto;
+}
+
+.pokemones .p-principal {
+    width: 100%; /* Ajustar el ancho al 100% para ocupar toda la columna */
+    text-align: center; /* Centrar el contenido */
+}
+
+.pokemones h1 {
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+
+
+.pokemones li {
+    list-style: none;
+}
+.col-md-4
+{
+    border-radius: 3%;
+}
+
+.p-img {
+    margin: 0.1em;
+    height: 15em;
+    width: 15em;
+    border-radius: 4%;
+    display: block; /* Asegurar que la imagen se muestre como bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+.p-img:hover {
+    transform: scale(1.1) rotate(5deg); /* Agrandar y rotar ligeramente */
+    animation: blink-animation 1s infinite; /* Parpadear durante 1 segundo */
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; /* Comienza completamente visible */
+    }
+    50% {
+        opacity: 0; /* Se desvanece a la mitad del tiempo */
+    }
+    100% {
+        opacity: 1; /* Vuelve a ser completamente visible */
+    }
+}
+.error
+{
+    background-color: #000000c7;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .pokemones .p-principal {
+        width: 100%; /* Ancho completo en dispositivos pequeños */
+    }
+}
