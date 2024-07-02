@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!-- Link para estilos de formularios -->
+    <link rel="stylesheet" href="../css/form.css">
+    <!-- Link para bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Bibliomania</h1>
+        <hr>
+        <p>Solo un coso de tareas</p>
+    </header>
+    <div class="box-form">
+        <div class="form-header">
+            <h1>El ingreso de nuevos agentes</h1>
+            <p>Registre datos solamente, lo demás es igual</p>
+        </div>
+        <div class="form-input">
+            <form action="/autor/insert" method="post" id="autor-form-insert" class="hide">
+                <h2>Añadir un nuevo autor</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Nombre del autor" aria-label="nombre_autor" aria-describedby="nombre_autor" name="nombre_autor">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Apellido</span>
+                    <input type="text" class="form-control" placeholder="Apellido del autor" aria-label="apellido_autor" aria-describedby="apellido_autor" name="apellido_autor">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Fecha de nacimiento</span>
+                    <input type="date" class="form-control" aria-label="fecha_autor" aria-describedby="fecha_autor" name="fecha_autor">
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>            
+            <form action="/libro/insert" method="post" id="libro-form-insert" class="hide">
+                <h2>Añadir un nuevo libro</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Titulo</span>
+                    <input type="text" class="form-control" placeholder="Titulo del libro" aria-label="titulo_libro" aria-describedby="titulo_libro" name="titulo_libro">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Autor</span>
+                    <select class="form-select" aria-label="Default select example" id="id_autores" name="id_autor">
+                        <!-- Opciones generadas dinámicamente con los autores disponibles -->
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Fecha de publicación</span>
+                    <input type="date" class="form-control" aria-label="fecha_libro" aria-describedby="fecha_libro" name="fecha_libro">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Precio</span>
+                    <input type="number" class="form-control" placeholder="Precio del libro" aria-label="precio_libro" aria-describedby="precio_libro" name="precio_libro">
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>
+            <form action="/autor/update" method="post" id="autor-form-update" class="hide">
+                <h2>Actualizar a un autor</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Autor</span>
+                    <select class="form-select" aria-label="Default select example" id="id_autores_update" name="id_autor">
+                        <!-- Opciones generadas dinámicamente con los autores disponibles -->
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Nombre del autor" aria-label="nombre_autor" aria-describedby="nombre_autor" name="nombre_autor">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Apellido</span>
+                    <input type="text" class="form-control" placeholder="Apellido del autor" aria-label="apellido_autor" aria-describedby="apellido_autor" name="apellido_autor">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Fecha de nacimiento</span>
+                    <input type="date" class="form-control" aria-label="fecha_autor" aria-describedby="fecha_autor" name="fecha_autor">
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>
+            <form action="/libro/update" method="post" id="libro-form-update" class="hide">
+                <h2>Actualizar un libro</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Seleccione un libro</span>
+                    <select class="form-select" aria-label="Default select example" id="libro_update" name="id_libro">
+                        <!-- Opciones generadas dinámicamente con los libros disponibles -->
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Titulo</span>
+                    <input type="text" class="form-control" placeholder="Titulo del libro" aria-label="titulo_libro" aria-describedby="titulo_libro" name="titulo_libro">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Autor</span>
+                    <select class="form-select" aria-label="Default select example" id="autoresL_update" name="id_autor">
+                        <!-- Opciones generadas dinámicamente con los autores disponibles -->
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Fecha de publicación</span>
+                    <input type="date" class="form-control" placeholder="Fecha del libro" aria-label="fecha_libro" aria-describedby="fecha_libro" name="fecha_libro">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Precio</span>
+                    <input type="number" class="form-control" placeholder="Precio del libro" aria-label="precio_libro" aria-describedby="precio_libro" name="precio_libro">
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>
+            <form action="/autor/delete" method="post" id="autor-form-delete" class="hide">
+                <h2>Eliminar un autor</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Autor</span>
+                    <select class="form-select" aria-label="Default select example" id="autores_delete" name="id_autor">
+                        <!-- Opciones generadas dinámicamente con los autores disponibles -->
+                    </select>
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>            
+            <form action="/libro/delete" method="post" id="libro-form-delete" class="hide">
+                <h2>Eliminar un libro</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Libro</span>
+                    <select class="form-select" aria-label="Default select example" id="libro_delete" name="id_libro">
+                        <!-- Opciones generadas dinámicamente con los libros disponibles -->
+                    </select>
+                </div>
+                <button class="btn btn-form" type="submit">Confirmar</button>
+            </form>
+        </div>
+        <div class="form-footer">
+            <div class="row">
+                <h3>Puede escoger cambiar y elegir otro tipo para agregar</h3>
+            </div>
+            <div class="row input-group form-buttons">
+                <div class="dropdown">
+                    <button class="btn btn-form" type="button" id="optionsAutor" data-bs-toggle="dropdown" aria-expanded="false">Autores</button>
+                    <ul class="dropdown-menu" aria-labelledby="optionsAutor">
+                        <li><button class="btn btn-form" onclick="nuevoAutor()">Nuevo Autor</button></li>
+                        <li><button class="btn btn-form" onclick="actualizarAutor()">Actualizar Autor</button></li>
+                        <li><button class="btn btn-form" onclick="eliminarAutor()">Eliminar Autor</button></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-form" type="button" id="optionsLibro" data-bs-toggle="dropdown" aria-expanded="false">Libros</button>
+                    <ul class="dropdown-menu" aria-labelledby="optionsLibro">
+                        <li><button class="btn btn-form" onclick="nuevoLibro()">Nuevo Libro</button></li>
+                        <li><button class="btn btn-form" onclick="actualizarLibro()">Actualizar Libro</button></li>
+                        <li><button class="btn btn-form" onclick="eliminarLibro()">Eliminar Libro</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><hr><br><br><br><br>
+    <div class="container">
+        <!-- Selector de filtro -->
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="filtroTabla">Filtrar por:</label>
+            <select class="form-select" id="filtroTabla">
+                <option value="autores">Autores</option>
+                <option value="libros">Libros</option>
+            </select>
+            <input type="text" class="form-control" placeholder="Buscar por título o nombre" id="inputBusqueda">
+            <button class="btn btn-outline-secondary" type="button" onclick="filtrarTabla()">Buscar</button>
+        </div>
+        <!-- Tabla de Autores -->
+        <div class="datos-section">
+            <h1>Tabla de autores</h1>
+            <div class="datos" id="TablaAutores">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID Autor</th>
+                                <th scope="col">Nombre Autor</th>
+                                <th scope="col">Apellido Autor</th>
+                                <th scope="col">Fecha de Nacimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyAutores">
+                            <!-- Aquí se cargarán las filas dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de Libros -->
+        <div class="datos-section">
+            <h1>Tabla de libros</h1>
+            <div class="datos" id="TablaLibros">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID Libro</th>
+                                <th scope="col">Título Libro</th>
+                                <th scope="col">Fecha de Publicación</th>
+                                <th scope="col">Precio Libro</th>
+                                <th scope="col">ID Autor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyLibros">
+                            <!-- Aquí se cargarán las filas dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts propios -->
+    <script src="../js/extracciion.js"></script>
+    <script src="../js/ocultacion.js"></script>
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

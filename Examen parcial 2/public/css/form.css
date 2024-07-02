@@ -1,0 +1,100 @@
+body
+{
+    background-color: #e3e7ea;
+    color: #0d2c5c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box-form
+{
+    width: 30em;
+    padding: 1em;
+    background-color: #e1edf7;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    align-self: center;
+    border-radius: 4%;
+}
+.form-input, .form-footer, .form-header
+{
+    width: 25em;
+    padding: 1em;
+    margin: 1em 1em 1em 1em;
+}
+    .form-input h2
+    {
+        text-align: center;
+        font-size: 2em!important;
+        color: #193781!important;
+    }
+
+    .form-input span
+    {
+        background-color: #8797bf;
+        color: #edecff;
+        font-size: 1em;
+        font-weight: bold
+    }
+    .form-input input
+    {
+        background-color: #c9d2e7;
+        color: #1c1872;
+        font-size: 0.7em;
+        font-weight: bold
+    }
+    .form-input select
+    {
+        background-color: #c9d2e7;
+        color: #1c1872;
+        font-size: 0.7em;
+        font-weight: bold
+    }
+.form-footer h2
+{
+    text-align: center;
+    font-size: 2em!important;
+    color: #193781!important;
+}
+.form-footer button
+{
+    background-color: #8797bf;
+    color: #e1edf7;
+}
+.form-buttons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    .dropdown
+    {
+        width: 50%;
+        .btn-form
+        {
+            width: 9em;
+            margin-bottom: 10px;
+        }
+        .dropdown-menu
+        {
+            padding: 0.5em;
+            background-color: #0d2c5c;
+        }
+    }
+}
+.form-buttons
+{
+    align-content: center;
+}
+.btn-form
+{
+    background-color: #8797bf;
+    color: #193781;
+}
+/* Footer */
+
+/* Para las secciones ocultas */
+.hide
+{
+    display: none;
+}
